@@ -27,7 +27,10 @@ class Config:
     def __init__(self) -> None:
         self.API_ID: str = os.environ.get("8179798", None)
         self.API_HASH: str = os.environ.get("78a1bfb49887007ad2760a2394b063c4", None)
-        self.SESSION: str = os.environ.get("AQA9ilIMBB_Ib7cNUnMnqQcbtBxvK0IWH8JFZ9-7SgVJOqiP7GHnXmrO4DfdEsv1aQTu2-RgQOrtVAM_8gHMradTiRHQr9FGP3cKspBxvclc_68ISzxkHd9fazkWtP-6iUvNxaaEgmKL1HDxDewH95oGmvFN0P5SxpMtla2ClNIJIdwO3j2j--oRoyxavJODUV8FJEucAs4W3Z-aCqqNTEYH0jUV4YGTisYINKdfVOf9FmYb7gXspKlN4o82BYMSWSf3rs8L_XeodI2ntcXb7sOZ86eSxVs-feTiufqZqHIy20WIvlWfOb3wPWL45rIxys6-fHRYbdFH15dVBc9Mv0HLcAU0PAA", None)
+        self.SESSION: str = os.environ.get(
+            "AQA9ilIMBB_Ib7cNUnMnqQcbtBxvK0IWH8JFZ9-7SgVJOqiP7GHnXmrO4DfdEsv1aQTu2-RgQOrtVAM_8gHMradTiRHQr9FGP3cKspBxvclc_68ISzxkHd9fazkWtP-6iUvNxaaEgmKL1HDxDewH95oGmvFN0P5SxpMtla2ClNIJIdwO3j2j--oRoyxavJODUV8FJEucAs4W3Z-aCqqNTEYH0jUV4YGTisYINKdfVOf9FmYb7gXspKlN4o82BYMSWSf3rs8L_XeodI2ntcXb7sOZ86eSxVs-feTiufqZqHIy20WIvlWfOb3wPWL45rIxys6-fHRYbdFH15dVBc9Mv0HLcAU0PAA",
+            None,
+        )
         self.SUDOERS: list = [
             int(id) for id in os.environ.get("901527936", " ").split() if id.isnumeric()
         ]
